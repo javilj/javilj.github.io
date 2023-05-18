@@ -1,0 +1,57 @@
+body{
+    background-image: url(https://blog.jitter.video/content/images/2021/12/Jitter-Pink-perfect-loop-cubes.gif);
+    background-size: cover;
+    margin:10px;
+}
+h1{
+    font-size: 60px;
+}
+
+
+.heading{
+    background-color: aquamarine;
+}
+
+.mainbody{
+    background-color:lightblue;
+    padding:10px;
+}
+
+#navigationButtons{
+    width:550px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 65px;
+    
+}
+
+ul{
+    margin-top:10px;
+    padding-left:10px;
+}
+li{
+    color:white;
+    list-style-type: none;
+    position:relative;
+    margin:10px;
+    padding-left:50px;
+    transition: padding-left 230ms ease-out;
+
+}
+li:before {
+    content: "■"; /* Use any bullet character you prefer */
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s; /* Add a transition for smooth rotation */
+  }
+
+li:hover:before {
+    transform: rotate(45deg); /* Rotate the bullet 360 degrees on hover */
+  }
+li:hover{
+    animation: turn90degrees 1s;
+    padding-left:100px;
+    color: red;
+    justify-content: flex-end;
+}
