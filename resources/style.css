@@ -1,5 +1,6 @@
 body{
-    background-image: url(https://blog.jitter.video/content/images/2021/12/Jitter-Pink-perfect-loop-cubes.gif);
+    background-image: url(/resources/spinningJosh.gif);
+    background-color:lightcyan;
     background-size: cover;
     margin:10px;
 }
@@ -9,7 +10,8 @@ h1{
 
 
 .heading{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    padding:1em;
 }
 
 .mainbody{
@@ -31,7 +33,7 @@ ul{
     padding-left:10px;
 }
 li{
-    color:white;
+    color:grey;
     list-style-type: none;
     position:relative;
     margin:10px;
@@ -40,18 +42,29 @@ li{
 
 }
 li:before {
-    content: "■"; /* Use any bullet character you prefer */
+    content: ">"; /* Use any bullet character you prefer */
     position: absolute;
     left: 0;
     transition: transform 0.3s; /* Add a transition for smooth rotation */
   }
 
 li:hover:before {
-    transform: rotate(45deg); /* Rotate the bullet 360 degrees on hover */
+    transform: rotate(180deg); /* Rotate the bullet 360 degrees on hover */
   }
 li:hover{
     animation: turn90degrees 1s;
     padding-left:100px;
-    color: red;
+    color: pink;
     justify-content: flex-end;
+}
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
 }
