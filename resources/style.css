@@ -1,38 +1,41 @@
 body{
-    background-image: url(/resources/spinningJosh.gif);
-    background-color:lightcyan;
+    background-image: url(/resources/spinningJosh-ezgif.com-crop.gif);
+    background-repeat:no-repeat;
+    background-color:black;
     background-size: cover;
     margin:10px;
+    font-family: "Press Start 2P", system-ui;
 }
 h1{
-    font-size: 60px;
+    font-size: 3em;
 }
-
 
 .heading{
-    /* background-color: aquamarine; */
+    color:#4AF626;
     padding:1em;
 }
-
-.mainbody{
-    background-color:lightblue;
-    padding:10px;
+.navigation{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #navigationButtons{
-    width:550px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 65px;
-    
+    font-size: 3em;
+    text-decoration: none;
 }
 
 ul{
     margin-top:10px;
-    padding-left:10px;
+    /* padding-left:10px; */
 }
+
 li{
+    font-weight: bold;
     color:grey;
     list-style-type: none;
     position:relative;
@@ -49,14 +52,22 @@ li:before {
   }
 
 li:hover:before {
-    transform: rotate(180deg); /* Rotate the bullet 360 degrees on hover */
+    /* transform: rotate(180deg); Rotate the bullet 360 degrees on hover */
   }
 li:hover{
-    animation: turn90degrees 1s;
-    padding-left:100px;
-    color: pink;
+    /* animation: turn90degrees 1s; */
+    padding-left:1.5em;
+    color: #4AF626;
     justify-content: flex-end;
 }
+a{
+    color:grey;
+    text-decoration: dotted;
+}
+a:hover{
+    color:#4AF626
+}
+
 a.nostyle:link {
     text-decoration: inherit;
     color: inherit;
